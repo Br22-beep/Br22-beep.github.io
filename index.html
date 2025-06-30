@@ -1,166 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Barbare Tchumburidze - Resume</title>
-        <style>
-            /* Base Styles */
-            body {
-                font-family: "Segoe UI", sans-serif;
-                margin: 0;
-                padding: 0;
-                background: #f4f4f4;
-                color: #333;
-                transition: background-color 0.3s, color 0.3s;
-            }
-            header {
-                background-color: #222;
-                color: white;
-                padding: 2rem;
-                text-align: center;
-            }
-            main {
-                max-width: 800px;
-                margin: auto;
-                padding: 2rem;
-                background: white;
-                border-radius: 8px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-            h2 {
-                color: #444;
-                border-bottom: 1px solid #ccc;
-                padding-bottom: 0.3rem;
-            }
-            ul {
-                list-style-type: none;
-                padding: 0;
-            }
-            li {
-                margin: 0.5rem 0;
-            }
-            .section {
-                margin-bottom: 2rem;
-            }
-            footer {
-                text-align: center;
-                padding: 1rem;
-                background-color: #222;
-                color: white;
-            }
-            a {
-                color: #0077cc;
-                text-decoration: none;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbare Tchumburidze - Resume</title>
+    <style>
+      :root {
+        --primary: #4f46e5;
+        --secondary: #22d3ee;
+        --bg: #f8fafc;
+        --text: #1f2937;
+        --card-bg: #ffffff;
+      }
 
-            /* Mobile Responsive */
-            @media (max-width: 768px) {
-                main {
-                    padding: 1rem;
-                }
-                header h1 {
-                    font-size: 1.8rem;
-                }
-                footer {
-                    font-size: 0.8rem;
-                }
-            }
-        </style>
-    </head>
-    <body class="light-mode">
-        <header>
-            <h1>Barbare Tchumburidze</h1>
-            <p>
-                Aspiring Web Developer | HTML, CSS, JavaScript, PHP & Laravel
-                Learner
-            </p>
-        </header>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+      }
 
-        <main>
-            <section class="section">
-                <h2>About Me</h2>
-                <p>
-                    Junior web developer with strong HTML & CSS skills,
-                    beginner-level JavaScript, and currently learning PHP,
-                    Laravel, and MySQL. Passionate about creating websites and
-                    transitioning into a full-time tech role.
-                </p>
-            </section>
+      header {
+        background: var(--primary);
+        color: white;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
 
-            <section class="section">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML5, CSS3</li>
-                    <li>JavaScript (beginner)</li>
-                    <li>PHP, Laravel, MySQL (learning)</li>
-                    <li>Git & GitHub</li>
-                </ul>
-            </section>
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
 
-            <section class="section">
-                <h2>Projects</h2>
-                <ul>
-                    <li>
-                        <strong>Guess My Number</strong> – A fun JavaScript
-                        project where users try to guess the correct number.
-                        Built using HTML, CSS, and JavaScript. <br />
-                        GitHub:
-                        <a
-                            href="https://github.com/Br22-beep/GuessMyNumber.git"
-                            target="_blank"
-                            >View Repository</a
-                        >
-                    </li>
-                    <li>
-                        <strong>Task List App</strong> – A web app to add, edit,
-                        and delete tasks with descriptions. Includes flash
-                        messages, validation, and MySQL integration. Built with
-                        PHP and Laravel as part of a Udemy course.<br />
-                        Course:
-                        <a
-                            href="https://www.udemy.com/course/laravel-beginner-fundamentals/?couponCode=KEEPLEARNING"
-                            target="_blank"
-                            >Laravel Beginner Fundamentals</a
-                        >
-                    </li>
-                </ul>
-            </section>
+      header p {
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+      }
 
-            <section class="section">
-                <h2>Experience</h2>
-                <p><strong>Chef Barista | 2+ Years</strong></p>
-                <ul>
-                    <li>Led bar operations and trained new team members</li>
-                    <li>
-                        Handled multitasking and customer service under pressure
-                    </li>
-                    <li>
-                        Developed leadership, organization, and communication
-                        skills
-                    </li>
-                </ul>
-            </section>
+      main {
+        max-width: 900px;
+        margin: auto;
+        padding: 2rem;
+      }
 
-            <section class="section">
-                <h2>Contact</h2>
-                <p>
-                    Email:
-                    <a href="mailto:your@email.com"
-                        >barbaretchhumburidze@gmail.com</a
-                    >
-                </p>
-                <p>
-                    GitHub:
-                    <a href="https://github.com/Br22-beep" target="_blank"
-                        >github.com/Br22-beep</a
-                    >
-                </p>
-            </section>
-        </main>
+      section {
+        background: var(--card-bg);
+        border-left: 5px solid var(--primary);
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
 
-        <footer>
-            <p>© 2025 Barbare Tchumburidze. All rights reserved.</p>
-        </footer>
-    </body>
+      h2 {
+        margin-top: 0;
+        color: var(--primary);
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 1rem;
+      }
+
+      li::before {
+        content: '•';
+        color: var(--secondary);
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: var(--primary);
+        color: white;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 768px) {
+        main {
+          padding: 1rem;
+        }
+
+        header h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Barbare Tchumburidze</h1>
+      <p>Junior Web Developer | Laravel & PHP | Frontend Learner</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Motivated junior web developer with hands-on experience in Laravel and PHP.
+          Passionate about building clean, responsive, and user-friendly web apps.
+          Strong foundation in HTML, CSS, and Git. Eager to grow as a full-stack developer.
+        </p>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>PHP, Laravel (MVC, Routing, Migrations, Blade)</li>
+          <li>HTML5, CSS3 (Responsive Design, Flexbox, Grid)</li>
+          <li>JavaScript (Basics, DOM Manipulation)</li>
+          <li>MySQL (Database Management, Eloquent ORM)</li>
+          <li>Git & GitHub (Version Control, GitHub Pages)</li>
+          <li>VS Code, Composer, Artisan CLI</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <strong>Guess My Number</strong> – A fun guessing game built with pure JavaScript.  
+            <a href="https://github.com/Br22-beep/GuessMyNumber" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <strong>Task List App</strong> – A Laravel app to create, update, and manage tasks.  
+            <a href="https://github.com/Br22-beep/task-list" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <strong>Book Reviews Platform</strong> – Laravel app where users can add books and reviews.  
+            <a href="https://github.com/Br22-beep/Book_Reviews" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <strong>Resume Website</strong> – This personal resume site, built with HTML & CSS and deployed via GitHub Pages.  
+            <a href="https://br22-beep.github.io/" target="_blank">Live Site</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <p><strong>Chef Barista – 2+ Years</strong></p>
+        <ul>
+          <li>Led daily operations and mentored new baristas</li>
+          <li>Maintained high-quality customer service under pressure</li>
+          <li>Developed communication and leadership skills</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:barbaretchumburidze@gmail.com">barbaretchumburidze@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Br22-beep" target="_blank">github.com/Br22-beep</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Barbare Tchumburidze. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
